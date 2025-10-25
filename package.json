@@ -7,12 +7,14 @@
 		"build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"lint": "biome check . --write"
+		"lint": "biome check . --write",
+		"deploy": "npm run build && simple-ftp-deploy"
 	},
 	"dependencies": {
 		"astro": "^5.15.1"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.3.0"
+		"@biomejs/biome": "2.3.0",
+		"simple-ftp-deploy": "1.0.5"
 	}
 }

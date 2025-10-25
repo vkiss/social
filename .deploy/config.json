@@ -1,0 +1,6 @@
+{
+	"include": ["*"],
+	"exclude": [],
+	"deleteRemote": true,
+	"forcePasv": true
+}

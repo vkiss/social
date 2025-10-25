@@ -1,9 +1,21 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../assets/avatar.png";
+import title from "../assets/title.gif";
+---
+
 <div id="container">
 	<main>
 		<section id="hero">
-			<h1>
-				vinik
-			</h1>
+			<Image
+        class="avatar"
+        src={avatar}
+        alt={"cara do golias (meu gato)"}
+      />
+			<Image
+        src={title}
+        alt={"site do vinik"}
+      />
 			<section id="links">
 				<a href="https://bsky.app/profile/kiss.dev.br"
 					>
@@ -54,7 +66,8 @@
 		padding: 16px;
     background-color: var(--c1);
     height: fit-content;
-    margin: 12px auto auto 12px;
+    --_offset: auto;
+    margin: var(--_offset) auto auto var(--_offset);
 	}
 
 	h1 {
@@ -173,4 +186,12 @@
 			line-height: 1.5;
 		}
 	}
+
+  .avatar {
+    display: block;
+    margin: 0 auto 16px;
+    --_size: 140px;
+    width: var(--_size);
+    height: var(--_size);
+  }
 </style>
