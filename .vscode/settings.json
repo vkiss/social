@@ -1,0 +1,37 @@
+{
+	"workbench.colorCustomizations": {
+		"activityBar.activeBackground": "#5fac47",
+		"activityBar.background": "#5fac47",
+		"activityBar.foreground": "#15202b",
+		"activityBar.inactiveForeground": "#15202b99",
+		"activityBarBadge.background": "#e8ecf6",
+		"activityBarBadge.foreground": "#15202b",
+		"commandCenter.border": "#e7e7e799",
+		"sash.hoverBorder": "#5fac47",
+		"statusBar.background": "#4b8838",
+		"statusBar.foreground": "#e7e7e7",
+		"statusBarItem.hoverBackground": "#5fac47",
+		"statusBarItem.remoteBackground": "#4b8838",
+		"statusBarItem.remoteForeground": "#e7e7e7",
+		"titleBar.activeBackground": "#4b8838",
+		"titleBar.activeForeground": "#e7e7e7",
+		"titleBar.inactiveBackground": "#4b883899",
+		"titleBar.inactiveForeground": "#e7e7e799"
+	},
+	"peacock.color": "#4b8838",
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		"*.ts": "${capture}.js",
+		"*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+		"*.jsx": "${capture}.js",
+		"*.tsx": "${capture}.ts, ${capture}.module.scss",
+		"index.tsx": "styles.module.scss",
+		"tsconfig.json": "tsconfig.*.json",
+		"package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, *.env, biome.json, tsconfig.*, astro.config.mjs",
+		"next.config.js": "next-env.*",
+		"layout.tsx": "layout.*",
+		"page.tsx": "page.*",
+		"not-found.tsx": "not-found.*"
+	},
+	"typescript.tsdk": "node_modules\\typescript\\lib"
+}

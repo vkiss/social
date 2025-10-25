@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>vinik</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+  html {
+    --s: 9px; /* control the size*/
+    --c1: #495657;
+    --c2: #fc9d9a;
+    --c3: #c1c1c1;
+    --c3-hover: #fff;
+
+    color: var(--c3);
+    background:
+      radial-gradient(var(--c1) 14%,var(--c2) 15% 30%,var(--c1) 31% 44%,var(--c2) 45% 60%,#0000 61%),
+      linear-gradient( 45deg,#0000 46%,var(--c2) 0 54%,#0000 0),
+      linear-gradient(-45deg,#0000 46%,var(--c2) 0 54%,#0000 0) var(--c1);
+    background-size: var(--s) var(--s);
+  }
+</style>
